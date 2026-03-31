@@ -30,20 +30,6 @@ map.fitBounds(bounds);
 
   var marker = L.marker([2.75,3]).addTo(map); //this reference point is the corner of the actual room, it's formatted as [y,x] coordinates b/c leaflet started as world maps
 
-// Initialize map
-var map = L.map('map', {
-  crs: L.CRS.Simple,
-  minZoom: -5
-});
-
-// Image bounds (your calibrated map)
-var bounds = [[0,0], [8.5,11]];
-var image = L.imageOverlay(
-  'ACEB 2440 Prototype Testing Map - calibrated left bottom.png',
-  bounds
-).addTo(map);
-
-map.fitBounds(bounds);
 
 // Custom red dot marker
 var dotIcon = L.divIcon({
