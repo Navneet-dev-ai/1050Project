@@ -22,7 +22,7 @@
 <script>
   var map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: 0
+    minZoom: 6.5
 });
   var bounds = [[0,0], [8.5,11]]; //bounds are set like a4 paper, the size of the png scale is 1:100 inches like the drawing
 var image = L.imageOverlay('ACEB 2440 Prototype Testing Map - calibrated left bottom.png', bounds).addTo(map);
