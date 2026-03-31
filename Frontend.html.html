@@ -52,10 +52,8 @@ async function updatePosition() {
     // Move marker (Leaflet uses [y, x])
     marker.setLatLng([data.y, data.x]);
 
-    // Update floor display if exists
-    if (document.getElementById("floorText")) {
-      document.getElementById("floorText").innerText =
-        "Floor: " + data.floor;
+    // Update marker to display the floor
+    marker.bindPopup("Floor; " + data.floor);
     }
 
   } catch (err) {
