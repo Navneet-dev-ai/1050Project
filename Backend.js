@@ -5,7 +5,7 @@ app.use(express.json());
 
 let latest = {x:0, y:0, floor:0};
 
-app,post("/data", (rqe,res) => {
+app.post("/data", (req,res) => {
     console.log("Incoming", req.body);
 
     const {x,y,floor} = req.body;
